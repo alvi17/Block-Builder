@@ -8,6 +8,7 @@ import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g3d.shaders.BaseShader;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -160,9 +161,11 @@ class GameScreen implements Screen, InputProcessor, BinSerializable {
         pauseMenu.show();
         save();
 
+
         // add intestitial add loading here
 
     }
+
 
     @Override
     public void pause() {

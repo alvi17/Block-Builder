@@ -18,7 +18,7 @@ allprojects {
 
     version = '0.4'
     ext {
-        appName = "1010! Klooni"
+        appName = "Block Builder"
         gdxVersion = '1.9.5'
         roboVMVersion = '2.3.0'
         box2DLightsVersion = '1.4'
@@ -58,6 +58,7 @@ project(":android") {
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-arm64-v8a"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86"
         natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-x86_64"
+        compile 'com.google.android.gms:play-services-ads:10.2.0'
     }
 }
 
@@ -80,6 +81,7 @@ project(":core") {
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+
     }
 }
 
